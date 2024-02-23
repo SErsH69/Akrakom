@@ -1,0 +1,13 @@
+.main_contacts {
+    padding-bottom: vw(56);
+    padding-top: vw(28);
+    &__title {
+        margin-bottom: vw(16);
+        color: var(--Black, #282828);
+        font-family: "CeraPro", sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
+}
