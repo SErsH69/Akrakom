@@ -5,6 +5,7 @@ import Vue from 'vue/dist/vue.js';
 // import $ from 'jquery';
 
 import Header from '../blocks/modules/header/header.js';
+import SearchPage from '../blocks/modules/search_page/search_page.js';
 import MainFirst from '../blocks/modules/main_first/main_first.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
@@ -20,6 +21,7 @@ window.app = new Vue({
         header: new Header({
             isMobileMenuOpened: false,
         }),
+        searchPage: new SearchPage(),
         mainFirst: new MainFirst(),
         modals: new Modals({
             modalsSelector: "data-modal",
@@ -35,6 +37,7 @@ window.app = new Vue({
     beforeMount() {
         this.isMounted = true;
         this.header.init();
+        this.searchPage.init();
         this.mainFirst.init();
         this.modals.init();
     },
