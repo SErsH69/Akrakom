@@ -1,0 +1,41 @@
+<div class="main_first">
+    <div class="main_first__in center_block">
+        <div class="main_first__title">Лакокрасочные материалы</div>
+        <div class="main_first__block">
+            <div class="main_first__bg">
+                <img src="./img/bg_first.png" alt="">
+            </div>
+            <div class="main_first__made"><img src="./img/icon_flag.svg" alt=""><span>СДЕЛАННО В РОССИИ</span></div>
+            <div class="main_first__img">
+                <img src="./img/paint_img.png" alt="">
+            </div>
+            <a href="#" class="main_first__btn"><span>Подробнее</span></a>
+            <div class="main_first__slider" v-if="sizes.window >= 1023">
+                <div class="js_main_first" id="lightgallery">
+                    <div class="main_first__item">
+                        <img src="./img/s1.png" alt="">
+                    </div>
+                    <div class="main_first__item">
+                        <img src="./img/s2.png" alt="">
+                    </div>
+                    <div class="main_first__item">
+                        <img src="./img/s3.png" alt="">
+                    </div>
+                    <div class="main_first__item">
+                        <img src="./img/s4.png" alt="">
+                    </div>
+                    <div class="main_first__item">
+                        <img src="./img/s2.png" alt="">
+                    </div>
+                    <div class="main_first__item">
+                        <img src="./img/s4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_first__more" v-if="sizes.window >= 1023">
+            <img src="./img/arrow.png" alt="">
+            <span>Нажмите на фото</span>
+        </div>
+    </div>
+</div>

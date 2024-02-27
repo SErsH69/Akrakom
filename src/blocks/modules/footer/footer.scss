@@ -125,7 +125,7 @@
                 margin: 0;
                 display: flex;
                 flex-wrap: wrap;
-                gap: vw(64);
+                gap: vw(32);
                 list-style: none;
                 @media all and (max-width: 1023px) {
                     gap: 32px;
