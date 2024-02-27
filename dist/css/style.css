@@ -2571,6 +2571,8 @@ textarea {
 .search_page__title {
   max-width: 48.1770833333vw;
   width: 100%;
+  text-decoration: none;
+  display: inline-block;
   color: var(--Black, #282828);
   font-family: var(--second-family);
   font-size: 1.6666666667vw;

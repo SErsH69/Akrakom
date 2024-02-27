@@ -24,6 +24,8 @@
     &__title {
         max-width: vw(925);
         width: 100%;
+        text-decoration: none;
+        display: inline-block;
         color: var(--Black, #282828);
         font-family: var(--second-family);
         font-size: vw(32);
