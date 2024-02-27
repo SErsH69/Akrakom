@@ -11,7 +11,7 @@ const MainFirst = class MainFirst {
             $('.js_main_first').slick({
                 slidesToShow: 5,
                 arrows: true,
-                infinite: true,
+                infinite: false,
                 slidesToScroll: 1,
                 responsive: [
                     {
@@ -35,6 +35,10 @@ const MainFirst = class MainFirst {
                 ]
             });
             lightGallery(document.getElementById('lightgallery'), {
+                speed: 500,
+                selector: '.main_first__item img'
+            });
+            lightGallery(document.getElementById('lightgallery2'), {
                 speed: 500,
                 selector: '.main_first__item img'
             });
