@@ -1,0 +1,46 @@
+.breadcrums {
+    padding-top: vw(32);
+    @media all and (max-width: 1023px) {
+        padding-top: 16px;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        @media all and (max-width: 1023px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__splash {
+        width: vw(16);
+        height: vw(16);
+        margin-left: vw(8);
+        margin-right: vw(8);
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M6 12L10 8L6 4' stroke='%23454545' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% / 100% no-repeat;
+        @media all and (max-width: 1023px) {
+            width: 16px;
+            height: 16px;
+            margin-left: 8px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+    }
+    span {
+        color: var(--Blue, #214AA3);
+        font-size: vw(16);
+        font-style: normal;
+        font-weight: 500;
+        @media all and (max-width: 1023px) {
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+        a {
+            text-decoration: none;
+            display: block;
+            span {
+                color: var(--Gray, #454545);
+                font-weight: 400;
+            }
+        }
+    }
+}

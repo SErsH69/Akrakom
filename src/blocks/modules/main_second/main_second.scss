@@ -4,11 +4,21 @@
         background: #FBFBFB;
         padding-top: vw(32);
         padding-bottom: vw(32);
+        @media all and (max-width: 1023px) {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-radius: 16px;
+        }
         .main_first__img {
             top: vw(-50);
             right: vw(140);
             justify-content: flex-end;
             width: vw(567);
+            @media all and (max-width: 1023px) {
+                width: 100%;
+                margin-top: 30px;
+                padding-bottom: 30px;
+            }
         }
     }
 }

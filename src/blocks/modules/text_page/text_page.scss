@@ -1,0 +1,40 @@
+.text_page {
+    padding-bottom: vw(56);
+    @media all and (max-width: 1023px) {
+        padding-bottom: 24px;
+    }
+    h2, h3, h4, h5, h6 {
+        font-family: var(--second-family) !important;
+        color: var(--Black, #282828);
+        font-size: vw(40);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        @media all and (max-width: 1023px) {
+            font-size: 24px;
+        }
+    }
+    p, ul, li, span {
+        color: var(--Gray, #454545);
+        font-family: var(--font-family);
+        font-size: vw(16);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        @media all and (max-width: 1023px) {
+            font-size: 16px;
+        }
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            &:not(:last-child) {
+                margin-bottom: vw(16);
+                @media all and (max-width: 1023px) {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
