@@ -1,7 +1,6 @@
 jQuery(function ($) {
   let totalSlides = $(".pages__url").length;
   let doneSlides = $(".pages__url:not(.pages__url--in-progress)").length;
-  doneSlides = 8;
   let slideProgress = (doneSlides / totalSlides) * 100;
 
   if (slideProgress >= 20) {
