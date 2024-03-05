@@ -1,20 +1,8 @@
 @font-face {
 	font-family: "CeraPro";
 	font-display: swap;
-	src: url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff") format("woff"), url("../fonts/CeraPro-Bold.ttf") format("ttf");
-	font-weight: 700;
-}
-@font-face {
-	font-family: "CeraPro";
-	font-display: swap;
 	src: url("../fonts/CeraPro-Light.woff2") format("woff2"), url("../fonts/CeraPro-Light.woff") format("woff"), url("../fonts/CeraPro-Light.ttf") format("ttf");
 	font-weight: 300;
-}
-@font-face {
-	font-family: "CeraPro";
-	font-display: swap;
-	src: url("../fonts/CeraPro-Black.woff2") format("woff2"), url("../fonts/CeraPro-Black.woff") format("woff"), url("../fonts/CeraPro-Black.ttf") format("ttf");
-	font-weight: 900;
 }
 @font-face {
 	font-family: "CeraPro";
@@ -23,10 +11,10 @@
 	font-weight: 500;
 }
 @font-face {
-	font-family: "Gilroy";
+	font-family: "CeraPro";
 	font-display: swap;
-	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
-	font-weight: 700;
+	src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff"), url("../fonts/CeraPro-Regular.ttf") format("ttf");
+	font-weight: 400;
 }
 @font-face {
 	font-family: "CeraPro";
@@ -35,16 +23,22 @@
 	font-weight: 100;
 }
 @font-face {
-	font-family: "CeraPro";
+	font-family: "Gilroy";
 	font-display: swap;
-	src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff"), url("../fonts/CeraPro-Regular.ttf") format("ttf");
-	font-weight: 400;
+	src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("ttf");
+	font-weight: 900;
 }
 @font-face {
 	font-family: "Gilroy";
 	font-display: swap;
-	src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
-	font-weight: 300;
+	src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
+	font-weight: 800;
+}
+@font-face {
+	font-family: "Gilroy";
+	font-display: swap;
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
+	font-weight: 700;
 }
 @font-face {
 	font-family: "Gilroy";
@@ -61,14 +55,8 @@
 @font-face {
 	font-family: "Gilroy";
 	font-display: swap;
-	src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("ttf");
-	font-weight: 600;
-}
-@font-face {
-	font-family: "Gilroy";
-	font-display: swap;
-	src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("ttf");
-	font-weight: 900;
+	src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
+	font-weight: 300;
 }
 @font-face {
 	font-family: "Gilroy";
@@ -79,14 +67,8 @@
 @font-face {
 	font-family: "Gilroy";
 	font-display: swap;
-	src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "lg";
-	font-display: swap;
-	src: url("../fonts/lg.woff2") format("woff2"), url("../fonts/lg.woff") format("woff"), url("../fonts/lg.ttf") format("ttf");
-	font-weight: 400;
+	src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("ttf");
+	font-weight: 600;
 }
 @font-face {
 	font-family: "Gilroy";
@@ -97,6 +79,24 @@
 @font-face {
 	font-family: "Gilroy";
 	font-display: swap;
-	src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
-	font-weight: 800;
+	src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.ttf") format("ttf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "CeraPro";
+	font-display: swap;
+	src: url("../fonts/CeraPro-Black.woff2") format("woff2"), url("../fonts/CeraPro-Black.woff") format("woff"), url("../fonts/CeraPro-Black.ttf") format("ttf");
+	font-weight: 900;
+}
+@font-face {
+	font-family: "CeraPro";
+	font-display: swap;
+	src: url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff") format("woff"), url("../fonts/CeraPro-Bold.ttf") format("ttf");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "lg";
+	font-display: swap;
+	src: url("../fonts/lg.woff2") format("woff2"), url("../fonts/lg.woff") format("woff"), url("../fonts/lg.ttf") format("ttf");
+	font-weight: 400;
 }
