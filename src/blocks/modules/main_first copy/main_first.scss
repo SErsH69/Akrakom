@@ -8,33 +8,17 @@
     &__in {
         display: flex;
         gap: vw(32);
-        @media all and (max-width: 1023px) {
-            flex-direction: column;
-            gap: 20px;
-        }
     }
     &__inf {
         width: calc(50% - vw(16));
         display: flex;
         flex-direction: column;
-        @media all and (max-width: 1023px) {
-            width: 100%;
-        }
-        &--ank {
-            .main_first__img {
-                img {
-                    @media all and (min-width: 1023px) {
-                        max-width: vw(470);
-                    }
-                }
-            }
-        }
     }
     &__title {
-        margin-bottom: vw(16);
+        margin-bottom: vw(8);
         color: var(--Black, #282828);
         font-family: var(--second-family);
-        font-size: vw(32);
+        font-size: vw(56);
         font-style: normal;
         font-weight: 500;
         line-height: 140%;
@@ -45,7 +29,7 @@
     }
     &__block {
         position: relative;
-        padding: vw(24) vw(24);
+        padding: vw(30) vw(32);
         height: vw(500);
         display: flex;
         flex-direction: column;
@@ -93,7 +77,7 @@
         span {
             color: var(--Black, #282828);
             font-family: var(--second-family);
-            font-size: vw(12);
+            font-size: vw(14);
             font-style: normal;
             font-weight: 500;
             line-height: 140%;
@@ -107,11 +91,11 @@
         position: absolute;
         z-index: 1;
         z-index: 2;
-        height: auto;
-        width: 100%;
+        width: 92%;
+        height: 100%;
         pointer-events: none;
-        top: vw(93);
-        right: 0;
+        top: vw(73);
+        right: vw(72);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -123,8 +107,9 @@
     }
     &__btn {
         border: 0;
+        max-width: vw(447);
         width: 100%;
-        margin-top: vw(16);
+        margin-right: vw(68);
         border-radius: vw(5);
         border-left: 4px solid var(--red);      
         padding: vw(16) vw(32);
@@ -140,6 +125,8 @@
         position: relative;
         overflow: hidden;
         @media all and (max-width: 1023px) {
+            max-width: 100%;
+            margin-right: 0;
             border-radius: 5px;
             padding: 16px 32px;
             font-size: 16px;
@@ -192,25 +179,24 @@
         position: absolute;
         bottom: vw(5);
         right: 0;
-        max-width: vw(516);
+        max-width: vw(771);
         width: 100%;
         z-index: 2;
-        padding-left: vw(38);
-        padding-right: vw(38);
+        padding-left: vw(46);
+        padding-right: vw(46);
     }
     .slick-list {
-        margin-left: vw(-4);
-        margin-right: vw(-4);
+        margin-left: vw(-8);
+        margin-right: vw(-8);
     }
     .slick-slide {
-        margin-left: vw(4);
-        margin-right: vw(4);
+        margin-left: vw(8);
+        margin-right: vw(8);
     }
     &__item {
         font-size: 0;
         position: relative;
         border-radius: 6px;
-        height: vw(62);
         overflow: hidden;
         cursor: pointer;
         &:before {
@@ -244,7 +230,7 @@
     }
     .slick-prev {
         position: absolute;
-        left: vw(-38);
+        left: vw(-46);
         top: 50%;
         font-size: 0;
         border: 0;
@@ -260,7 +246,7 @@
     }
     .slick-next {
         position: absolute;
-        right: vw(-38);
+        right: vw(-46);
         top: 50%;
         font-size: 0;
         border: 0;
@@ -278,9 +264,10 @@
     &__more {
         display: flex;
         margin-left: auto;
-        margin-right: vw(37);
+        margin-right: vw(48);
         align-items: center;
         font-size: 0;
+        margin-top: vw(5);
         img {
             width: vw(22);
             height: vw(24);

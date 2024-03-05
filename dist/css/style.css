@@ -2897,14 +2897,20 @@ textarea {
 
 .main_first__in {
   display: flex;
+  gap: 1.6666666667vw;
+}
+
+.main_first__inf {
+  width: calc(50% - 0.8333333333vw);
+  display: flex;
   flex-direction: column;
 }
 
 .main_first__title {
-  margin-bottom: 0.4166666667vw;
+  margin-bottom: 0.8333333333vw;
   color: var(--Black, #282828);
   font-family: var(--second-family);
-  font-size: 2.9166666667vw;
+  font-size: 1.6666666667vw;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
@@ -2912,7 +2918,7 @@ textarea {
 
 .main_first__block {
   position: relative;
-  padding: 1.5625vw 1.6666666667vw;
+  padding: 1.25vw 1.25vw;
   height: 26.0416666667vw;
   display: flex;
   flex-direction: column;
@@ -2957,7 +2963,7 @@ textarea {
 .main_first__made span {
   color: var(--Black, #282828);
   font-family: var(--second-family);
-  font-size: 0.7291666667vw;
+  font-size: 0.625vw;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
@@ -2968,11 +2974,11 @@ textarea {
   position: absolute;
   z-index: 1;
   z-index: 2;
-  width: 92%;
-  height: 100%;
+  height: auto;
+  width: 100%;
   pointer-events: none;
-  top: 3.8020833333vw;
-  right: 3.75vw;
+  top: 4.84375vw;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2980,9 +2986,8 @@ textarea {
 
 .main_first__btn {
   border: 0;
-  max-width: 23.28125vw;
   width: 100%;
-  margin-right: 3.5416666667vw;
+  margin-top: 0.8333333333vw;
   border-radius: 0.2604166667vw;
   border-left: 4px solid var(--red);
   padding: 0.8333333333vw 1.6666666667vw;
@@ -3038,27 +3043,28 @@ textarea {
   position: absolute;
   bottom: 0.2604166667vw;
   right: 0;
-  max-width: 40.15625vw;
+  max-width: 26.875vw;
   width: 100%;
   z-index: 2;
-  padding-left: 2.3958333333vw;
-  padding-right: 2.3958333333vw;
+  padding-left: 1.9791666667vw;
+  padding-right: 1.9791666667vw;
 }
 
 .main_first .slick-list {
-  margin-left: -0.4166666667vw;
-  margin-right: -0.4166666667vw;
+  margin-left: -0.2083333333vw;
+  margin-right: -0.2083333333vw;
 }
 
 .main_first .slick-slide {
-  margin-left: 0.4166666667vw;
-  margin-right: 0.4166666667vw;
+  margin-left: 0.2083333333vw;
+  margin-right: 0.2083333333vw;
 }
 
 .main_first__item {
   font-size: 0;
   position: relative;
   border-radius: 6px;
+  height: 3.2291666667vw;
   overflow: hidden;
   cursor: pointer;
 }
@@ -3095,7 +3101,7 @@ textarea {
 
 .main_first .slick-prev {
   position: absolute;
-  left: -2.3958333333vw;
+  left: -1.9791666667vw;
   top: 50%;
   font-size: 0;
   border: 0;
@@ -3113,7 +3119,7 @@ textarea {
 
 .main_first .slick-next {
   position: absolute;
-  right: -2.3958333333vw;
+  right: -1.9791666667vw;
   top: 50%;
   font-size: 0;
   border: 0;
@@ -3133,10 +3139,9 @@ textarea {
 .main_first__more {
   display: flex;
   margin-left: auto;
-  margin-right: 2.5vw;
+  margin-right: 1.9270833333vw;
   align-items: center;
   font-size: 0;
-  margin-top: 0.2604166667vw;
 }
 
 .main_first__more img {
@@ -3152,20 +3157,6 @@ textarea {
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
-}
-
-.main_first--second {
-  border-radius: 1.6666666667vw;
-  background: #FBFBFB;
-  padding-top: 1.6666666667vw;
-  padding-bottom: 1.6666666667vw;
-}
-
-.main_first--second .main_first__img {
-  top: -2.6041666667vw;
-  right: 7.2916666667vw;
-  justify-content: flex-end;
-  width: 29.53125vw;
 }
 
 .main_red {
@@ -3664,6 +3655,12 @@ textarea {
   }
 }
 
+@media all and (min-width: 1023px) {
+  .main_first__inf--ank .main_first__img img {
+    max-width: 24.4791666667vw;
+  }
+}
+
 @media all and (max-width: 1023px) {
   .center_block {
     max-width: 1320px;
@@ -3885,6 +3882,15 @@ textarea {
     padding-bottom: 24px;
   }
 
+  .main_first__in {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main_first__inf {
+    width: 100%;
+  }
+
   .main_first__title {
     font-size: 24px;
     margin-bottom: 8px;
@@ -3913,8 +3919,6 @@ textarea {
   }
 
   .main_first__btn {
-    max-width: 100%;
-    margin-right: 0;
     border-radius: 5px;
     padding: 16px 32px;
     font-size: 16px;
@@ -3930,18 +3934,6 @@ textarea {
     margin-top: -7px;
     width: 14px;
     height: 14px;
-  }
-
-  .main_first--second {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-radius: 16px;
-  }
-
-  .main_first--second .main_first__img {
-    width: 100%;
-    margin-top: 30px;
-    padding-bottom: 30px;
   }
 
   .main_red {

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Главная страница</title>
-        <link rel="stylesheet" href="css/style.css?_v=20240306014215">
+        <link rel="stylesheet" href="css/style.css?_v=20240306020206">
     </head>
     <body>
         <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -115,89 +115,87 @@
             <main class="content">
                 <div class="main_first">
     <div class="main_first__in center_block">
-        <div class="main_first__title">Лакокрасочные материалы</div>
-        <div class="main_first__block">
-            <div class="main_first__bg">
-                <img v-if="sizes.window >= 1023" src="./img/bg_first.png" alt="">
-                <picture><source srcset="./img/bg_first_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/bg_first_mob.png" alt=""></picture>
-            </div>
-            <div class="main_first__made"><img src="./img/icon_flag.svg" alt=""><span>СДЕЛАННО В РОССИИ</span></div>
-            <div class="main_first__img">
-                <img v-if="sizes.window >= 1023" src="./img/paint_img.png" alt="">
-                <picture><source srcset="./img/paint_img_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/paint_img_mob.png" alt=""></picture>
-            </div>
-            <a href="#" class="main_first__btn" v-if="sizes.window >= 1023"><span>Подробнее</span></a>
-            <div class="main_first__slider" v-if="sizes.window >= 1023">
-                <div class="js_main_first" id="lightgallery">
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
-                    </div>
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
-                    </div>
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
-                    </div>
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
-                    </div>
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
-                    </div>
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+        <div class="main_first__inf">
+            <div class="main_first__title">Лакокрасочные материалы</div>
+            <div class="main_first__block">
+                <div class="main_first__bg">
+                    <img v-if="sizes.window >= 1023" src="./img/bg_first_mini.png" alt="">
+                    <picture><source srcset="./img/bg_first_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/bg_first_mob.png" alt=""></picture>
+                </div>
+                <div class="main_first__made"><img src="./img/icon_flag.svg" alt=""><span>СДЕЛАННО В РОССИИ</span></div>
+                <div class="main_first__img">
+                    <img v-if="sizes.window >= 1023" src="./img/paint_img.png" alt="">
+                    <picture><source srcset="./img/paint_img_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/paint_img_mob.png" alt=""></picture>
+                </div>
+                <div class="main_first__slider" v-if="sizes.window >= 1023">
+                    <div class="js_main_first" id="lightgallery">
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
+                        </div>
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                        </div>
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
+                        </div>
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                        </div>
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                        </div>
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <a href="#" class="main_first__btn" v-if="sizes.window <= 1023"><span>Подробнее</span></a>
-        <div class="main_first__more" v-if="sizes.window >= 1023">
-            <picture><source srcset="./img/arrow.webp" type="image/webp"><img src="./img/arrow.png" alt=""></picture>
-            <span>Нажмите на фото</span>
-        </div>
-    </div>
-</div>
-                <div class="main_first main_first--second">
-    <div class="main_first__in center_block">
-        <div class="main_first__title">Химические анкера</div>
-        <div class="main_first__block">
-            <div class="main_first__bg">
-                <img v-if="sizes.window >= 1023" src="./img/bg_first.png" alt="">
-                <picture><source srcset="./img/bg_first_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/bg_first_mob.png" alt=""></picture>
+            <div class="main_first__more" v-if="sizes.window >= 1023">
+                <picture><source srcset="./img/arrow.webp" type="image/webp"><img src="./img/arrow.png" alt=""></picture>
+                <span>Нажмите на фото</span>
             </div>
-            <div class="main_first__made"><img src="./img/icon_flag.svg" alt=""><span>СДЕЛАННО В РОССИИ</span></div>
-            <div class="main_first__img">
-                <img v-if="sizes.window >= 1023" src="./img/anker_img.png" alt="">
-                <picture><source srcset="./img/anker_img.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/anker_img.png" alt=""></picture>
-            </div>
-            <a href="#" class="main_first__btn" v-if="sizes.window >= 1023"><span>Подробнее</span></a>
-            <div class="main_first__slider" v-if="sizes.window >= 1023">
-                <div class="js_main_first" id="lightgallery2">
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
-                    </div>
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
-                    </div>
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
-                    </div>
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
-                    </div>
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
-                    </div>
-                    <div class="main_first__item">
-                        <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+            <a href="#" class="main_first__btn"><span>Подробнее</span></a>
+        </div>
+        <div class="main_first__inf main_first__inf--ank">
+            <div class="main_first__title">Химические анкера</div>
+            <div class="main_first__block">
+                <div class="main_first__bg">
+                    <img v-if="sizes.window >= 1023" src="./img/bg_first_mini.png" alt="">
+                    <picture><source srcset="./img/bg_first_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/bg_first_mob.png" alt=""></picture>
+                </div>
+                <div class="main_first__made"><img src="./img/icon_flag.svg" alt=""><span>СДЕЛАННО В РОССИИ</span></div>
+                <div class="main_first__img">
+                    <img v-if="sizes.window >= 1023" src="./img/anker_img.png" alt="">
+                    <picture><source srcset="./img/anker_img.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/anker_img.png" alt=""></picture>
+                </div>
+               <div class="main_first__slider" v-if="sizes.window >= 1023">
+                    <div class="js_main_first" id="lightgallery2">
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
+                        </div>
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                        </div>
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
+                        </div>
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                        </div>
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                        </div>
+                        <div class="main_first__item">
+                            <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <a href="#" class="main_first__btn" v-if="sizes.window <= 1023"><span>Подробнее</span></a>
-        <div class="main_first__more" v-if="sizes.window >= 1023">
-            <picture><source srcset="./img/arrow.webp" type="image/webp"><img src="./img/arrow.png" alt=""></picture>
-            <span>Нажмите на фото</span>
+            <div class="main_first__more" v-if="sizes.window >= 1023">
+                <picture><source srcset="./img/arrow.webp" type="image/webp"><img src="./img/arrow.png" alt=""></picture>
+                <span>Нажмите на фото</span>
+            </div>
+            <a href="#" class="main_first__btn"><span>Подробнее</span></a>
         </div>
     </div>
 </div>
@@ -399,8 +397,8 @@
 </div>
         </div>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20240306014215" type="text/javascript"></script>
-    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js?_v=20240306014215" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20240306020206" type="text/javascript"></script>
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js?_v=20240306020206" type="text/javascript"></script>
     <script type="text/javascript">
         ymaps.ready(init);
     
@@ -430,6 +428,6 @@
     
         }
     </script>
-    <script src="js/app.min.js?_v=20240306014215"></script>
+    <script src="js/app.min.js?_v=20240306020206"></script>
     </body>
 </html>

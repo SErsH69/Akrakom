@@ -9,7 +9,7 @@ const MainFirst = class MainFirst {
     initSlider() {
         document.addEventListener('DOMContentLoaded', () => {
             $('.js_main_first').slick({
-                slidesToShow: 4,
+                slidesToShow: 5,
                 arrows: true,
                 infinite: false,
                 slidesToScroll: 1,
