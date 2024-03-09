@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Страница поиска</title>
+        <title>О компании</title>
         <link rel="stylesheet" href="css/style.css?_v=20240310030751">
     </head>
     <body>
@@ -129,70 +129,183 @@
         </span>
     </div>
 </div>
-                <div class="search_page center_block">
-    <div class="search_page__blocks">
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
+                <div class="main_first_in">
+    <div class="main_first_in__in center_block">
+        <div class="main_first_in__title">Лакокрасочные материалы</div>
+        <div class="main_first_in__block">
+            <div class="main_first_in__bg">
+                <img v-if="sizes.window >= 1023" src="./img/bg_first.png" alt="">
+                <picture><source srcset="./img/bg_first_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/bg_first_mob.png" alt=""></picture>
+            </div>
+            <div class="main_first_in__made"><img src="./img/icon_flag.svg" alt=""><span>СДЕЛАННО В РОССИИ</span></div>
+            <div class="main_first_in__img">
+                <img v-if="sizes.window >= 1023" src="./img/paint_img_in.png" alt="">
+                <picture><source srcset="./img/paint_img_in_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/paint_img_in_mob.png" alt=""></picture>
+            </div>
+            <a href="#" class="main_first_in__btn" v-if="sizes.window >= 1023"><span>Подробнее</span></a>
+            <div class="main_first_in__slider" v-if="sizes.window >= 1023">
+                <div class="js_main_first_in" id="lightgallery">
+                    <div class="main_first_in__item">
+                        <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
+                    </div>
+                    <div class="main_first_in__item">
+                        <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                    </div>
+                    <div class="main_first_in__item">
+                        <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
+                    </div>
+                    <div class="main_first_in__item">
+                        <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                    </div>
+                    <div class="main_first_in__item">
+                        <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                    </div>
+                    <div class="main_first_in__item">
+                        <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                    </div>
+                </div>
+            </div>
+            <div class="main_first_in__more" v-if="sizes.window <= 1023">
+                <picture><source srcset="./img/arrow2.webp" type="image/webp"><img src="./img/arrow2.png" alt=""></picture>
+                <span>Нажмите на фото</span>
+            </div>
         </div>
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
+        <div class="main_first_in__slider" v-if="sizes.window <= 1023">
+            <div class="js_main_first_in" id="lightgallery">
+                <div class="main_first_in__item">
+                    <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
+                </div>
+                <div class="main_first_in__item">
+                    <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                </div>
+                <div class="main_first_in__item">
+                    <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
+                </div>
+                <div class="main_first_in__item">
+                    <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                </div>
+                <div class="main_first_in__item">
+                    <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                </div>
+                <div class="main_first_in__item">
+                    <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                </div>
+            </div>
         </div>
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
+        <a href="#" class="main_first_in__btn" v-if="sizes.window <= 1023"><span>Подробнее</span></a>
+        <div class="main_first_in__more" v-if="sizes.window >= 1023">
+            <picture><source srcset="./img/arrow.webp" type="image/webp"><img src="./img/arrow.png" alt=""></picture>
+            <span>Нажмите на фото</span>
         </div>
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
+</div>
+                <div class="main_cat">
+    <div class="main_cat__in center_block">
+        <div class="main_cat__text">
+            <div class="main_cat__text--l-side">Описание</div>
+            <div class="main_cat__text--r-side">
+                <p>Лакокрасочные материалы Акраком - высокое качество и яркие цвета! </p>
+                <p>У нас вы найдете широкий выбор лакокрасочных материалов для всех видов поверхностей. Независимо от того, нужна ли вам краска для стен, потолка, фасадов зданий,промышленных объектов или металлических конструкций. Акраком предлагает надежные продукты, которые подарят вашим проектам идеальный вид.</p>
+                <p>Наши материалы отличаются прочностью и долговечностью, обеспечивая долговременную защиту от внешних воздействий. Благодаря передовым технологиям, наша краска не выгорает под воздействием солнца и не образует трещин, сохраняя первоначальный вид на протяжении длительного времени.</p>
+                <p>Легко наносится и быстро сохнет, что позволяет вам экономить время и получать профессиональные результаты даже без специальных навыков. Все продукты Акраком имеют высокую покрываемость, что позволяет сэкономить на расходе краски и получить ровное и насыщенное покрытие уже при первом слое.</p>
+                <p>Не упустите возможность преобразить ваш дом, офис или любой другой строительный оъект с помощью качественных лакокрасочных материалов Акраком. Закажите сейчас и получите гарантированное качество по выгодной цене.</p>
+                <b>Лакокрасочные материалы Акраком - выбор профессионалов и идеальное решение для вашего проекта!</b>
+            </div>
         </div>
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
+        <div class="main_cat__prod">
+            <div class="main_cat__prod--l-side">
+                <div class="main_cat__prod--title">Наша продукция</div>
+                <div class="main_cat__prod--text">Предлагаем приобрести  архитектурные <br>формы из каталога или на заказ <br>по эксклюзивному проекту</div>
+                <nav class="main_cat__prod--menu" v-if="sizes.window >= 1023">
+                    <ul>
+                        <li>
+                            <a href="#">Грунтовки</a>
+                            <ul>
+                                <li><a href="#">Краска интерьерная для внутренних работ</a></li>
+                                <li><a href="#">Краска интерьерная повышенной белизны для внутренних работ</a></li>
+                                <li><a href="#">Краска стойкая к мытью, Эмаль полуглянцевая водно-дисперсионная</a></li>
+                                <li><a href="#">Эмаль полуглянцевая водно-дисперсионная</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main_cat__prod--r-side">
+                <a href="#" class="main_cat__prod--item">
+                    <div class="main_cat__prod--btn">Фасадная</div>
+                    <div class="main_cat__prod--bg">
+                        <img v-if="sizes.window >= 1023" src="./img/i1.png" alt="">
+                        <picture><source srcset="./img/i1_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i1_mob.png" alt=""></picture>
+                    </div>
+                </a>
+                <a href="#" class="main_cat__prod--item">
+                    <div class="main_cat__prod--btn">Грунтовки</div>
+                    <div class="main_cat__prod--bg">
+                        <img v-if="sizes.window >= 1023" src="./img/i2.png" alt="">
+                        <picture><source srcset="./img/i2_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i2_mob.png" alt=""></picture>
+                    </div>
+                </a>
+                <a href="#" class="main_cat__prod--item">
+                    <div class="main_cat__prod--btn">Грунтовки</div>
+                    <div class="main_cat__prod--bg">
+                        <img v-if="sizes.window >= 1023" src="./img/i3.png" alt="">
+                        <picture><source srcset="./img/i3_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i3_mob.png" alt=""></picture>
+                    </div>
+                </a>
+            </div>
+            <nav class="main_cat__prod--menu" v-if="sizes.window <= 1023">
+                <ul>
+                    <li>
+                        <a href="#">Грунтовки</a>
+                        <ul>
+                            <li><a href="#">Краска интерьерная для внутренних работ</a></li>
+                            <li><a href="#">Краска интерьерная повышенной белизны для внутренних работ</a></li>
+                            <li><a href="#">Краска стойкая к мытью, Эмаль полуглянцевая водно-дисперсионная</a></li>
+                            <li><a href="#">Эмаль полуглянцевая водно-дисперсионная</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
-        </div>
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
-        </div>
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
-        </div>
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
-        </div>
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
-        </div>
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
-        </div>
-        <div class="search_page__block">
-            <a href="#" class="search_page__title">Химические анкера</a>
-            <div class="search_page__text">Капсульный химический анкер. Высокоэффективный двухкомпонентный безусадочный химический состав для анкерных креплений. Имеет высокую адгезию с материалом основания. Устойчив к воздействиям высоких температур  (до + 120°С). Высоко устойчив к агрессивным средам (кислотам и щелочам), морской воде, нефтепродуктам и сточным водам нефтепереработки. Испытан на ударные и динамические нагрузки в составе крепления барьерного ограждения</div>
-            <a href="#" class="search_page__btn"><span>Подробнее</span></a>
+        <br><br>
+        <br>
+        <div class="main_cat__items">
+            <a href="#" class="main_cat__prod--item">
+                <div class="main_cat__prod--btn">Шпильки химического анкера</div>
+                <div class="main_cat__prod--bg">
+                    <img v-if="sizes.window >= 1023" src="./img/i1.png" alt="">
+                    <picture><source srcset="./img/i1_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i1_mob.png" alt=""></picture>
+                </div>
+            </a>
+            <a href="#" class="main_cat__prod--item">
+                <div class="main_cat__prod--btn">Капсульные химические анкера</div>
+                <div class="main_cat__prod--bg">
+                    <img v-if="sizes.window >= 1023" src="./img/i1.png" alt="">
+                    <picture><source srcset="./img/i1_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i1_mob.png" alt=""></picture>
+                </div>
+            </a>
+            <a href="#" class="main_cat__prod--item">
+                <div class="main_cat__prod--btn">В картридже</div>
+                <div class="main_cat__prod--bg">
+                    <img v-if="sizes.window >= 1023" src="./img/i1.png" alt="">
+                    <picture><source srcset="./img/i1_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i1_mob.png" alt=""></picture>
+                </div>
+            </a>
+            <a href="#" class="main_cat__prod--item">
+                <div class="main_cat__prod--btn">Химический анкер в таре</div>
+                <div class="main_cat__prod--bg">
+                    <img v-if="sizes.window >= 1023" src="./img/i1.png" alt="">
+                    <picture><source srcset="./img/i1_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i1_mob.png" alt=""></picture>
+                </div>
+            </a>
+            <a href="#" class="main_cat__prod--item">
+                <div class="main_cat__prod--btn">Прочее</div>
+                <div class="main_cat__prod--bg">
+                    <img v-if="sizes.window >= 1023" src="./img/i1.png" alt="">
+                    <picture><source srcset="./img/i1_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i1_mob.png" alt=""></picture>
+                </div>
+            </a>
         </div>
     </div>
-    <div class="search_page__more">Загрузить еще</div>
 </div>
             </main>
             <footer class="footer">

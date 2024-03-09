@@ -7,6 +7,8 @@ import Vue from 'vue/dist/vue.js';
 import Header from '../blocks/modules/header/header.js';
 import SearchPage from '../blocks/modules/search_page/search_page.js';
 import MainFirst from '../blocks/modules/main_first/main_first.js';
+import MainFirstIn from '../blocks/modules/main_first_in/main_first_in.js';
+import MainCat from '../blocks/modules/main_cat/main_cat.js';
 import Footer from '../blocks/modules/footer/footer.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
@@ -24,6 +26,8 @@ window.app = new Vue({
         }),
         searchPage: new SearchPage(),
         mainFirst: new MainFirst(),
+        mainFirstIn: new MainFirstIn(),
+        mainCat: new MainCat(),
         footer: new Footer(),
         modals: new Modals({
             modalsSelector: "data-modal",
@@ -41,6 +45,8 @@ window.app = new Vue({
         this.header.init();
         this.searchPage.init();
         this.mainFirst.init();
+        this.mainFirstIn.init();
+        this.mainCat.init();
         this.footer.init();
         this.modals.init();
     },

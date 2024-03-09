@@ -1,0 +1,69 @@
+<div class="main_first_in">
+    <div class="main_first_in__in center_block">
+        <div class="main_first_in__title">Лакокрасочные материалы</div>
+        <div class="main_first_in__block">
+            <div class="main_first_in__bg">
+                <img v-if="sizes.window >= 1023" src="./img/bg_first.png" alt="">
+                <img v-if="sizes.window <= 1023" src="./img/bg_first_mob.png" alt="">
+            </div>
+            <div class="main_first_in__made"><img src="./img/icon_flag.svg" alt=""><span>СДЕЛАННО В РОССИИ</span></div>
+            <div class="main_first_in__img">
+                <img v-if="sizes.window >= 1023" src="./img/paint_img_in.png" alt="">
+                <img v-if="sizes.window <= 1023" src="./img/paint_img_in_mob.png" alt="">
+            </div>
+            <a href="#" class="main_first_in__btn" v-if="sizes.window >= 1023"><span>Подробнее</span></a>
+            <div class="main_first_in__slider" v-if="sizes.window >= 1023">
+                <div class="js_main_first_in" id="lightgallery">
+                    <div class="main_first_in__item">
+                        <img src="./img/s1.png" alt="">
+                    </div>
+                    <div class="main_first_in__item">
+                        <img src="./img/s2.png" alt="">
+                    </div>
+                    <div class="main_first_in__item">
+                        <img src="./img/s3.png" alt="">
+                    </div>
+                    <div class="main_first_in__item">
+                        <img src="./img/s4.png" alt="">
+                    </div>
+                    <div class="main_first_in__item">
+                        <img src="./img/s2.png" alt="">
+                    </div>
+                    <div class="main_first_in__item">
+                        <img src="./img/s4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="main_first_in__more" v-if="sizes.window <= 1023">
+                <img src="./img/arrow2.png" alt="">
+                <span>Нажмите на фото</span>
+            </div>
+        </div>
+        <div class="main_first_in__slider" v-if="sizes.window <= 1023">
+            <div class="js_main_first_in" id="lightgallery">
+                <div class="main_first_in__item">
+                    <img src="./img/s1.png" alt="">
+                </div>
+                <div class="main_first_in__item">
+                    <img src="./img/s2.png" alt="">
+                </div>
+                <div class="main_first_in__item">
+                    <img src="./img/s3.png" alt="">
+                </div>
+                <div class="main_first_in__item">
+                    <img src="./img/s4.png" alt="">
+                </div>
+                <div class="main_first_in__item">
+                    <img src="./img/s2.png" alt="">
+                </div>
+                <div class="main_first_in__item">
+                    <img src="./img/s4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="main_first_in__btn" v-if="sizes.window <= 1023"><span>Подробнее</span></a>
+        <div class="main_first_in__more" v-if="sizes.window >= 1023">
+            <img src="./img/arrow.png" alt="">
+            <span>Нажмите на фото</span>
+        </div>
+</div>

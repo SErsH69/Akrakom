@@ -1,0 +1,351 @@
+.main_cat {
+    @media all and (max-width: 1023px) {
+        padding-bottom: 24px;
+    }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 16px;
+        border-top: 1px solid var(--Light-gray-2, #E0E0E0);
+        border-bottom: 1px solid var(--Light-gray-2, #E0E0E0);
+        padding-top: vw(32);
+        padding-bottom: vw(32);
+        margin-top: vw(56);
+        margin-bottom: vw(28);
+        @media all and (max-width: 1023px) {
+            margin-top: 48px;
+            margin-bottom: 24px;
+            padding: 16px 8px;
+            flex-direction: column;
+            border-radius: 8px;
+            &.isActive {
+                .main_cat__text--l-side {
+                    &:before {
+                        transform: rotate(180deg);
+                    }
+                }
+                .main_cat__text--r-side {
+                    display: block;
+                }
+            }
+        }
+        &--l-side {
+            flex: 0 0 vw(428);
+            margin-right: vw(20);
+            color: var(--Black, #282828);
+            font-size: vw(40);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            @media all and (max-width: 1023px) {
+                flex: none;
+                margin-right: 0;
+                position: relative;
+                font-size: 24px;
+                line-height: 140%;
+                padding-right: 24px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    width: 24px;
+                    height: 24px;
+                    margin-top: -12px;
+                    right: 0;
+                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9L12 15L18 9' stroke='%23282828' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% / 100% no-repeat;
+                }
+            }
+        }
+        &--r-side {
+            width: 100%;
+            color: var(--Darck-Gray, #454545);
+            font-size: vw(14);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            @media all and (max-width: 1023px) {
+                display: none;
+                font-size: 14px;
+                margin-top: 16px;
+            }
+        }
+    }
+    &__prod {
+        margin-top: vw(28);
+        display: flex;
+        @media all and (max-width: 1023px) {
+            margin-top: 24px;
+            flex-direction: column;
+        }
+        &--l-side {
+            flex: 0 0 vw(405);
+            margin-right: vw(20);
+            @media all and (max-width: 1023px) {
+                flex: none;
+                margin-right: 0;
+                margin-bottom: 24px;
+            }
+        }
+        &--title {
+            color: var(--Black, #282828);
+            font-size: vw(40);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            margin-bottom: vw(8);
+            @media all and (max-width: 1023px) {
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+        }
+        &--text {
+            color: var(--Darck-Gray, #454545);
+            font-size: vw(16);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            margin-bottom: vw(158);
+            @media all and (max-width: 1023px) {
+                margin-bottom: 0;
+                font-size: 14px;
+            }
+        }
+        &--menu {
+            border-radius: 8px;
+            border: 1px solid var(--Light-gray-2, #E0E0E0);
+            background: var(--Liner-3, linear-gradient(180deg, #F8F8F8 69%, #EFEFEF 100%));
+            box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.08), 0px 29px 29px 0px rgba(0, 0, 0, 0.07), 0px 65px 39px 0px rgba(0, 0, 0, 0.04), 0px 115px 46px 0px rgba(0, 0, 0, 0.01), 0px 180px 50px 0px rgba(0, 0, 0, 0.00);
+            padding: vw(16);
+            @media all and (max-width: 1023px) {
+                padding: 16px;
+            }
+            & > ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                > li {
+                    > a {
+                        color: var(--white, #FFF);
+                        display: inline-block;
+                        text-decoration: none;
+                        font-size: vw(16);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 140%;
+                        padding: vw(8) vw(16);
+                        padding-right: vw(56);
+                        position: relative;
+                        border-radius: vw(50);
+                        background: var(--Blue, #214AA3);
+                        margin-bottom: vw(8);
+                        @media all and (max-width: 1023px) {
+                            margin-bottom: 8px;
+                            font-size: 16px;
+                            padding: 8px 16px;
+                            padding-right: 56px;
+                            border-radius: 50px;
+                        }
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            right: vw(16);
+                            border-radius: 50%;
+                            margin-top: vw(-12);
+                            width: vw(24);
+                            height: vw(24);
+                            background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M4.08341 9.91663L9.91675 4.08329M9.91675 4.08329H4.08341M9.91675 4.08329V9.91663' stroke='%23214AA3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% no-repeat;
+                            background-size: vw(14);
+                            @media all and (max-width: 1023px) {
+                                background-size: 14px;
+                                right: 16px;
+                                margin-top: -12px;
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        li {
+                            &:not(:last-child) {
+                                border-bottom: 1px solid #E0E0E0;
+                            }
+                            a {
+                                padding-top: vw(8);
+                                padding-bottom: vw(8);
+                                text-decoration: none;
+                                display: block;
+                                padding-right: vw(20);
+                                color: var(--Black, #282828);
+                                font-size: vw(14);
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 140%;
+                                position: relative;
+                                @media all and (max-width: 1023px) {
+                                    padding-top: 8px;
+                                    padding-bottom: 8px;
+                                    padding-right: 20px;
+                                    font-size: 14px;
+                                }
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    top: vw(4);
+                                    right: 0;
+                                    width: vw(14);
+                                    height: vw(14);
+                                    top: 50%;
+                                    margin-top: vw(-7);
+                                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8' fill='none'%3E%3Cpath d='M1.16667 7L7 1.16667M7 1.16667H1.16667M7 1.16667V7' stroke='%23282828' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% no-repeat;
+                                    background-size: vw(8);
+                                    @media all and (max-width: 1023px) {
+                                        background-size: 8px;
+                                        top: 4px;
+                                        width: 14px;
+                                        height: 14px;
+                                        margin-top: -7px;
+                                    }
+                                }
+                                &:hover {
+                                    color: var(--Blue, #214AA3);
+                                    &:before {
+                                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8' fill='none'%3E%3Cpath d='M1.16667 7L7 1.16667M7 1.16667H1.16667M7 1.16667V7' stroke='%23214AA3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% no-repeat;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--r-side {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: vw(-12);
+            margin-right: vw(-12);
+            width: 100%;
+            @media all and (max-width: 1023px) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        &--item {
+            margin-bottom: vw(24);
+            border-radius: 8px;
+            padding: vw(16);
+            min-height: vw(256);
+            border: 1px solid var(--Light-gray-2, #E0E0E0);
+            background: var(--Liner-3, linear-gradient(180deg, #F8F8F8 69%, #EFEFEF 100%));
+            position: relative;
+            margin-left: vw(12);
+            margin-right: vw(12);
+            @media all and (max-width: 1023px) {
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 24px;
+                padding: 16px;
+                min-height: 296px;
+            }
+            &:first-child {
+                width: 100%;
+            }
+            &:not(:first-child) {
+                width: calc(50% - vw(24));
+                @media all and (max-width: 1023px) {
+                    width: 100%;
+                }
+            }
+            &:hover {
+                box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.08), 0px 29px 29px 0px rgba(0, 0, 0, 0.07), 0px 65px 39px 0px rgba(0, 0, 0, 0.04), 0px 115px 46px 0px rgba(0, 0, 0, 0.01), 0px 180px 50px 0px rgba(0, 0, 0, 0.00);
+                .main_cat__prod--btn {
+                    background: var(--Blue, #214AA3);
+                    color: #fff;
+                    &:before {
+                        background: #fff url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.08317 9.91663L9.9165 4.08329M9.9165 4.08329H4.08317M9.9165 4.08329V9.91663' stroke='%23214AA3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 50% no-repeat;
+                    }
+                }
+            }
+        }
+        &--btn {
+            display: inline-block;
+            border-radius: vw(50);
+            border: 1px solid var(--Light-gray-2, #E0E0E0);
+            background: var(--white, #FFF);
+            color: var(--Black, #282828);
+            font-size: vw(16);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            position: relative;
+            padding: vw(8) vw(16);
+            padding-right: vw(56);
+            @media all and (max-width: 1023px) {
+                font-size: 16px;
+                border-radius: 50px;
+                padding: 8px 16px;
+                padding-right: 56px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                border: 1px solid #214AA3;
+                right: vw(16);
+                border-radius: 50%;
+                margin-top: vw(-12);
+                width: vw(24);
+                height: vw(24);
+                background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' fill='none'%3E%3Cpath d='M4.83341 10.6666L10.6667 4.83329M10.6667 4.83329H4.83341M10.6667 4.83329V10.6666' stroke='%23214AA3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% no-repeat;
+                background-size: vw(14);
+                @media all and (max-width: 1023px) {
+                    background-size: 14px;
+                    width: 24px;
+                    height: 24px;
+                    margin-top: -12px;
+                    right: 16px;
+                }
+            }
+        }
+        &--bg {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 0;
+            @media all and (max-width: 1023px) {
+                left: 0;
+                right: unset;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: vw(-12);
+        margin-right: vw(-12);
+        @media all and (max-width: 1023px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .main_cat__prod--item { 
+            &:not(:nth-child(2)) {
+                width: calc(33.3% - vw(24));
+                @media all and (max-width: 1023px) {
+                    width: 100%;
+                }
+            }
+            &:nth-child(2) {
+                width: calc(66.6% - vw(24));
+                @media all and (max-width: 1023px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
