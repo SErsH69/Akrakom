@@ -9,6 +9,7 @@ import SearchPage from '../blocks/modules/search_page/search_page.js';
 import MainFirst from '../blocks/modules/main_first/main_first.js';
 import MainFirstIn from '../blocks/modules/main_first_in/main_first_in.js';
 import MainCat from '../blocks/modules/main_cat/main_cat.js';
+import MainProd from '../blocks/modules/main_prod/main_prod.js';
 import Footer from '../blocks/modules/footer/footer.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
@@ -28,6 +29,7 @@ window.app = new Vue({
         mainFirst: new MainFirst(),
         mainFirstIn: new MainFirstIn(),
         mainCat: new MainCat(),
+        mainProd: new MainProd(),
         footer: new Footer(),
         modals: new Modals({
             modalsSelector: "data-modal",
@@ -47,6 +49,7 @@ window.app = new Vue({
         this.mainFirst.init();
         this.mainFirstIn.init();
         this.mainCat.init();
+        this.mainProd.init();
         this.footer.init();
         this.modals.init();
     },
