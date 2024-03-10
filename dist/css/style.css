@@ -4764,6 +4764,7 @@ textarea {
 
 .main_tabs__docs--doc:hover {
   background: var(--white, #FFF);
+  box-shadow: 0px 4px 52px 0px rgba(34, 43, 76, 0.08);
 }
 
 .main_tabs__docs--doc:hover .main_tabs__docs--download {
