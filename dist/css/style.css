@@ -4028,7 +4028,6 @@ textarea {
   border-bottom: 1px solid var(--Light-gray-2, #E0E0E0);
   padding-top: 1.6666666667vw;
   padding-bottom: 1.6666666667vw;
-  margin-top: 2.9166666667vw;
   margin-bottom: 1.4583333333vw;
 }
 
@@ -4260,7 +4259,6 @@ textarea {
 }
 
 .main_prod {
-  padding-top: 2.9166666667vw;
   padding-bottom: 1.4583333333vw;
 }
 
@@ -5406,7 +5404,6 @@ textarea {
   }
 
   .main_cat__text {
-    margin-top: 48px;
     margin-bottom: 24px;
     padding: 16px 8px;
     flex-direction: column;
@@ -5557,7 +5554,6 @@ textarea {
   }
 
   .main_prod {
-    padding-top: 48px;
     padding-bottom: 24px;
   }
 

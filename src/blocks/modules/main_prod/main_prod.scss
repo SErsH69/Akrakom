@@ -1,8 +1,6 @@
 .main_prod {
-    padding-top: vw(56);
     padding-bottom: vw(28);
     @media all and (max-width: 1023px) {
-        padding-top: 48px;
         padding-bottom: 24px;
     }
     &__text {

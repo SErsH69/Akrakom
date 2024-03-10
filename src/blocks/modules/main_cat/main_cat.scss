@@ -10,10 +10,8 @@
         border-bottom: 1px solid var(--Light-gray-2, #E0E0E0);
         padding-top: vw(32);
         padding-bottom: vw(32);
-        margin-top: vw(56);
         margin-bottom: vw(28);
         @media all and (max-width: 1023px) {
-            margin-top: 48px;
             margin-bottom: 24px;
             padding: 16px 8px;
             flex-direction: column;
