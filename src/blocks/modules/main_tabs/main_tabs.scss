@@ -9,6 +9,37 @@
         display: flex;
         @media all and (max-width: 1023px) {
             flex-wrap: wrap;
+            &.isShow {
+                border-radius: 8px;
+                overflow: hidden;
+                .main_tabs__tab {
+                    display: block;
+                    order: 2;
+                    border-radius: 0;
+                    border-left: 0;
+                    border-right: 0;
+                }
+                .main_tabs__tab.isActive {
+                    display: block;
+                    order: 1;
+                    background: var(--Blue, #214AA3);
+                    color: #fff;
+                    border-color: transparent;
+                    span {
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            right: 0;
+                            width: 24px;
+                            margin-top: -12px;
+                            height: 24px;
+                            transform: rotate(180deg);
+                            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9L12 15L18 9' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% / 100% no-repeat;
+                        }
+                    }
+                }
+            }
         }
     }
     &__tab {
@@ -23,6 +54,17 @@
         justify-content: center;
         text-align: center;
         cursor: pointer;
+        @media all and (max-width: 1023px) {
+            padding: 16px;
+            font-weight: 500;
+            font-size: 16px;
+            display: none;
+            span {
+                display: inline-block;
+                padding-right: 32px;
+                position: relative;
+            }
+        }
         &:first-child {
             border-left: 1px solid var(--Light-gray-2, #E0E0E0);
         }
@@ -34,6 +76,24 @@
             box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.10), 8px 0px 8px 0px rgba(0, 0, 0, 0.09), 17px 0px 10px 0px rgba(0, 0, 0, 0.05), 31px 0px 12px 0px rgba(0, 0, 0, 0.01), 49px 0px 14px 0px rgba(0, 0, 0, 0.00);
             color: #fff;
             border-color: #214AA3;
+            @media all and (max-width: 1023px) {
+                display: block;
+                background: #fff;
+                color: #282828;
+                border-color: transparent;
+                span {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        width: 24px;
+                        margin-top: -12px;
+                        height: 24px;
+                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9L12 15L18 9' stroke='%23282828' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% / 100% no-repeat;
+                    }
+                }
+            }
         }
     }
     &__content {
