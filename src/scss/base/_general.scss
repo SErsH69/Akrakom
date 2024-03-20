@@ -92,3 +92,12 @@ textarea {
     background: #292D33;
 }
 // scrollbar end
+.table-wrapper {
+    overflow: auto;
+    table {
+        box-shadow: 2px 5px 12px 0px rgba(0, 0, 0, 0.04), 8px 21px 22px 0px rgba(0, 0, 0, 0.03), 17px 46px 30px 0px rgba(0, 0, 0, 0.02), 31px 82px 35px 0px rgba(0, 0, 0, 0.01), 48px 128px 38px 0px rgba(0, 0, 0, 0.00);
+    }
+}
+.wpcf7-spinner {
+    display: none !important;
+}

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Главная страница</title>
-        <link rel="stylesheet" href="css/style.css?_v=20240311032006">
+        <link rel="stylesheet" href="css/style.css?_v=20240320110120">
     </head>
     <body>
         <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -385,20 +385,45 @@
             <div class="modal" data-modal="1">
     <div class="modal__in">
         <div class="modal__closer"></div>
-        modal 1
-    </div>
-</div>
-
-<div class="modal" data-modal="2">
-    <div class="modal__in">
-        <div class="modal__closer"></div>
-        modal 2
+        <div class="modal__items">
+            <div class="modal__l-side" v-if="sizes.window >= 1023">
+                <picture><source srcset="./img/modal_img.webp" type="image/webp"><img src="./img/modal_img.png" alt=""></picture>
+            </div>
+            <div class="modal__r-side">
+                <div class="modal__title">Оставьте заявку
+                    и мы свяжемся с вами</div>
+                <form action="/login" method="POST" class="modal__form">
+                    <div class="modal__form--input">
+                        <input type="text" id="text" name="fio" placeholder="Ф.И.О" required>
+                        <label for="text">Ф.И.О</label>
+                    </div>
+                    <div class="modal__form--input">
+                        <input type="email" id="email" name="email" placeholder="Почта" required>
+                        <label for="email">Почта</label>
+                    </div>
+                    <div class="modal__form--input">
+                        <input type="tel" id="tel" name="phone" placeholder="Телефон" required>
+                        <label for="tel">Телефон</label>
+                    </div>
+                    <div class="modal__form--submit">
+                        <span>Отправить</span>
+                        <input type="submit" value="Отправить">
+                    </div>
+                </form>
+                <div class="modal__done">
+                    <div class="modal__done--icon"></div>
+                    <div class="modal__done--tit">Ваша заявка принята</div>
+                    <div class="modal__done--txt">В ближайшее время наш менеджер свяжется с Вами</div>
+                    <div class="modal__done--btn"><span>Хорошо, вернуться на главную</span></div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
         </div>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20240311032006" type="text/javascript"></script>
-    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js?_v=20240311032006" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20240320110120" type="text/javascript"></script>
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js?_v=20240320110120" type="text/javascript"></script>
     <script type="text/javascript">
         ymaps.ready(init);
     
@@ -428,6 +453,6 @@
     
         }
     </script>
-    <script src="js/app.min.js?_v=20240311032006"></script>
+    <script src="js/app.min.js?_v=20240320110120"></script>
     </body>
 </html>

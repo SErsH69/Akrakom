@@ -11,6 +11,10 @@ const SearchPage = class SearchPage {
                         blocks[i].classList.add('hide');
                     }
                 }
+                let hiddenBlocks1 = document.querySelectorAll('.search_page__block');
+                if (hiddenBlocks1.length <= 5) {
+                    showMoreButton.style.display = 'none';
+                }
         
                 function showMoreBlocks() {
                     let hiddenBlocks = document.querySelectorAll('.search_page__block.hide');

@@ -123,6 +123,9 @@
         cursor: pointer;
         position: relative;
         overflow: hidden;
+        * {
+            pointer-events: none;
+        }
         &:after {
             content: '';
             position: absolute;
