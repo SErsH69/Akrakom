@@ -52,7 +52,7 @@
         }
         &--title {
             color: #fff;
-            font-size: 190px;
+            font-size: vw(170);
             font-weight: 700;
             @media all and (max-width: 1023px) {
                 font-size: 40px;

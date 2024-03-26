@@ -85,7 +85,6 @@
         width: 92%;
         height: 100%;
         pointer-events: none;
-        top: vw(-40);
         right: vw(72);
         display: flex;
         align-items: center;
@@ -94,7 +93,14 @@
             position: unset;
             width: 100%;
             margin-top: 0px;
-            top: 0;
+        }
+    }
+    &.categor_main {
+        .main_first_in__img {
+            padding-bottom: vw(110);
+            @media all and (max-width: 1023px) {
+                padding-bottom: 0;
+            }
         }
     }
     &__btn {

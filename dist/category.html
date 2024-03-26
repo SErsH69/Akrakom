@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Категория</title>
-        <link rel="stylesheet" href="css/style.css?_v=20240320110120">
+        <link rel="stylesheet" href="css/style.css?_v=20240326222304">
     </head>
     <body>
         <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -212,11 +212,18 @@
                 <b>Лакокрасочные материалы Акраком - выбор профессионалов и идеальное решение для вашего проекта!</b>
             </div>
         </div>
-        <div class="main_cat__prod">
-            <div class="main_cat__prod--l-side">
+        <div class="main_cat__items prods_lak">
+            <div class="main_cat__prod--item">
                 <div class="main_cat__prod--title">Наша продукция</div>
                 <div class="main_cat__prod--text">Предлагаем приобрести  архитектурные <br>формы из каталога или на заказ <br>по эксклюзивному проекту</div>
-                <nav class="main_cat__prod--menu" v-if="sizes.window >= 1023">
+            </div>
+            <div class="main_cat__prod--item">
+                <div class="main_cat__prod--btn">Фасадная</div>
+                <div class="main_cat__prod--bg">
+                    <img v-if="sizes.window >= 1023" src="./img/i1.png" alt="">
+                    <picture><source srcset="./img/i1_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i1_mob.png" alt=""></picture>
+                </div>
+                <nav class="main_cat__prod--menu">
                     <ul>
                         <li>
                             <a href="#">Грунтовки</a>
@@ -230,42 +237,20 @@
                     </ul>
                 </nav>
             </div>
-            <div class="main_cat__prod--r-side">
-                <a href="#" class="main_cat__prod--item">
-                    <div class="main_cat__prod--btn">Фасадная</div>
-                    <div class="main_cat__prod--bg">
-                        <img v-if="sizes.window >= 1023" src="./img/i1.png" alt="">
-                        <picture><source srcset="./img/i1_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i1_mob.png" alt=""></picture>
-                    </div>
-                </a>
-                <a href="#" class="main_cat__prod--item">
-                    <div class="main_cat__prod--btn">Грунтовки</div>
-                    <div class="main_cat__prod--bg">
-                        <img v-if="sizes.window >= 1023" src="./img/i2.png" alt="">
-                        <picture><source srcset="./img/i2_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i2_mob.png" alt=""></picture>
-                    </div>
-                </a>
-                <a href="#" class="main_cat__prod--item">
-                    <div class="main_cat__prod--btn">Грунтовки</div>
-                    <div class="main_cat__prod--bg">
-                        <img v-if="sizes.window >= 1023" src="./img/i3.png" alt="">
-                        <picture><source srcset="./img/i3_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i3_mob.png" alt=""></picture>
-                    </div>
-                </a>
-            </div>
-            <nav class="main_cat__prod--menu" v-if="sizes.window <= 1023">
-                <ul>
-                    <li>
-                        <a href="#">Грунтовки</a>
-                        <ul>
-                            <li><a href="#">Краска интерьерная для внутренних работ</a></li>
-                            <li><a href="#">Краска интерьерная повышенной белизны для внутренних работ</a></li>
-                            <li><a href="#">Краска стойкая к мытью, Эмаль полуглянцевая водно-дисперсионная</a></li>
-                            <li><a href="#">Эмаль полуглянцевая водно-дисперсионная</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+            <a href="#" class="main_cat__prod--item">
+                <div class="main_cat__prod--btn">Грунтовки</div>
+                <div class="main_cat__prod--bg">
+                    <img v-if="sizes.window >= 1023" src="./img/i2.png" alt="">
+                    <picture><source srcset="./img/i2_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i2_mob.png" alt=""></picture>
+                </div>
+            </a>
+            <a href="#" class="main_cat__prod--item">
+                <div class="main_cat__prod--btn">Грунтовки</div>
+                <div class="main_cat__prod--bg">
+                    <img v-if="sizes.window >= 1023" src="./img/i3.png" alt="">
+                    <picture><source srcset="./img/i3_mob.webp" type="image/webp"><img v-if="sizes.window <= 1023" src="./img/i3_mob.png" alt=""></picture>
+                </div>
+            </a>
         </div>
         <br><br>
         <br>
@@ -423,6 +408,6 @@
     </div>
 </div>
         </div>
-        <script src="js/app.min.js?_v=20240320110120"></script>
+        <script src="js/app.min.js?_v=20240326222304"></script>
     </body>
 </html>
