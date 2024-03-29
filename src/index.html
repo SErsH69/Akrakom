@@ -9,6 +9,9 @@
     </head>
     <body>
         <div class="wrapper" id="app" :class="{isMobile, isTablet}">
+            <div v-if="!isMounted" class="preloader">
+              <div class="spinner"></div>
+            </div>
             @@include('blocks/modules/header/header.html', {})
             <main class="content">
                 @@include('blocks/modules/main_first/main_first.html', {})

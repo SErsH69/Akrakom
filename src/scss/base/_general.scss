@@ -101,3 +101,32 @@ textarea {
 .wpcf7-spinner {
     display: none !important;
 }
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  /* Крутящийся спиннер */
+  .spinner {
+    border: 5px solid #214aa3; /* Синий цвет */
+    border-top: 5px solid transparent; /* Прозрачный верхний край */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Анимация вращения */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

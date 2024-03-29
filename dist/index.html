@@ -5,10 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Главная страница</title>
-        <link rel="stylesheet" href="css/style.css?_v=20240326222304">
+        <link rel="stylesheet" href="css/style.css?_v=20240329173638">
     </head>
     <body>
         <div class="wrapper" id="app" :class="{isMobile, isTablet}">
+            <div v-if="!isMounted" class="preloader">
+              <div class="spinner"></div>
+            </div>
             <header class="header">
     <div class="header__inf" v-if="sizes.window >= 1023">
         <div class="header__inf--in center_block">
@@ -422,8 +425,8 @@
 </div>
         </div>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20240326222304" type="text/javascript"></script>
-    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js?_v=20240326222304" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20240329173638" type="text/javascript"></script>
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js?_v=20240329173638" type="text/javascript"></script>
     <script type="text/javascript">
         ymaps.ready(init);
     
@@ -453,6 +456,6 @@
     
         }
     </script>
-    <script src="js/app.min.js?_v=20240326222304"></script>
+    <script src="js/app.min.js?_v=20240329173638"></script>
     </body>
 </html>
