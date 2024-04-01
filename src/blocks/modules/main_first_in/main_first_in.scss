@@ -213,6 +213,7 @@
         border-radius: 6px;
         overflow: hidden;
         cursor: pointer;
+        height: vw(87);
         @media all and (max-width: 1023px) {
             height: 51px;
         }
