@@ -134,14 +134,12 @@
         }
         &--ser {
             display: flex;
-            flex-wrap: wrap;
             gap: vw(16);
             font-size: 0;
             margin-top: vw(16);
             @media all and (max-width: 1023px) {
                 overflow: auto;
                 margin-top: 16px;
-                flex-wrap: nowrap;
                 gap: 0;
             }
             div {
