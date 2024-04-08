@@ -57,6 +57,12 @@
             }
             img {
                 width: 100%;
+                height: vw(250);
+                object-fit: contain;
+                object-position: center;
+                @media all and (max-width: 1023px) {
+                    height: auto;
+                }
             }
         }
         &--r-side {

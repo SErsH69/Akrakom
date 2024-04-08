@@ -1875,13 +1875,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @font-face {
-  font-family: "CeraPro";
-  font-display: swap;
-  src: url("../fonts/CeraPro-Medium.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff") format("woff"), url("../fonts/CeraPro-Medium.ttf") format("ttf");
-  font-weight: 500;
-}
-
-@font-face {
   font-family: "Gilroy";
   font-display: swap;
   src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("ttf");
@@ -1889,10 +1882,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "CeraPro";
   font-display: swap;
-  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
-  font-weight: 800;
+  src: url("../fonts/CeraPro-Thin.woff2") format("woff2"), url("../fonts/CeraPro-Thin.woff") format("woff"), url("../fonts/CeraPro-Thin.ttf") format("ttf");
+  font-weight: 100;
 }
 
 @font-face {
@@ -1912,6 +1905,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
+  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
   src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
   font-weight: 300;
 }
@@ -1924,17 +1924,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "CeraPro";
   font-display: swap;
-  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("ttf");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("ttf");
-  font-weight: 600;
+  src: url("../fonts/CeraPro-Medium.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff") format("woff"), url("../fonts/CeraPro-Medium.ttf") format("ttf");
+  font-weight: 500;
 }
 
 @font-face {
@@ -1945,16 +1938,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @font-face {
-  font-family: "CeraPro";
+  font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff"), url("../fonts/CeraPro-Regular.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "CeraPro";
-  font-display: swap;
-  src: url("../fonts/CeraPro-Thin.woff2") format("woff2"), url("../fonts/CeraPro-Thin.woff") format("woff"), url("../fonts/CeraPro-Thin.ttf") format("ttf");
+  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("ttf");
   font-weight: 100;
 }
 
@@ -1963,6 +1949,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   font-display: swap;
   src: url("../fonts/CeraPro-Light.woff2") format("woff2"), url("../fonts/CeraPro-Light.woff") format("woff"), url("../fonts/CeraPro-Light.ttf") format("ttf");
   font-weight: 300;
+}
+
+@font-face {
+  font-family: "CeraPro";
+  font-display: swap;
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff"), url("../fonts/CeraPro-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("ttf");
+  font-weight: 600;
 }
 
 @font-face {
@@ -3559,6 +3559,7 @@ textarea {
   overflow: hidden;
   cursor: pointer;
   height: 4.53125vw;
+  background-color: #c4c4c4;
 }
 
 .main_first_in__item:before {
@@ -4334,11 +4335,11 @@ textarea {
   box-shadow: none;
 }
 
-.main_cat__items .main_cat__prod--item:not(:nth-child(2)) {
+.main_cat__items .main_cat__prod--item:not(:nth-child(1)) {
   width: calc(33.3% - 1.25vw);
 }
 
-.main_cat__items .main_cat__prod--item:nth-child(2) {
+.main_cat__items .main_cat__prod--item:nth-child(1) {
   width: calc(66.6% - 1.25vw);
 }
 
@@ -4383,6 +4384,11 @@ textarea {
 
 .main_prod__text--img img {
   width: 100%;
+  height: 13.0208333333vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .main_prod__text--r-side {
@@ -4526,6 +4532,14 @@ textarea {
 
 .main_tabs__content {
   display: none;
+}
+
+.main_tabs__content.color_content .main_tabs__params--title:nth-child(1) {
+  width: 30%;
+}
+
+.main_tabs__content.color_content .main_tabs__params--title:nth-child(2) {
+  width: 70%;
 }
 
 .main_tabs__content h2 {
@@ -6519,11 +6533,11 @@ textarea {
     min-height: unset;
   }
 
-  .main_cat__items .main_cat__prod--item:not(:nth-child(2)) {
+  .main_cat__items .main_cat__prod--item:not(:nth-child(1)) {
     width: 100%;
   }
 
-  .main_cat__items .main_cat__prod--item:nth-child(2) {
+  .main_cat__items .main_cat__prod--item:nth-child(1) {
     width: 100%;
   }
 
@@ -6554,6 +6568,10 @@ textarea {
   .main_prod__text--img {
     border-radius: 8px;
     margin-bottom: 24px;
+  }
+
+  .main_prod__text--img img {
+    height: auto;
   }
 
   .main_prod__text--r-side {

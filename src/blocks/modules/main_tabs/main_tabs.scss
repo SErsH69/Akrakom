@@ -98,6 +98,14 @@
     }
     &__content {
         display: none;
+        &.color_content {
+            .main_tabs__params--title:nth-child(1) {
+                width: 30%;
+            }
+            .main_tabs__params--title:nth-child(2) {
+                width: 70%;
+            }
+        }
         h2 {
             font-size: vw(24);
             color: var(--Black, #282828);
