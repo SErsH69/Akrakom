@@ -20,8 +20,9 @@
                     border-right: 0;
                 }
                 .main_tabs__tab.isActive {
-                    display: block;
+                    display: flex;
                     order: 1;
+                    border-radius: 16px 16px 0px 0px;
                     background: var(--Blue, #214AA3);
                     color: #fff;
                     border-color: transparent;
@@ -77,10 +78,15 @@
             color: #fff;
             border-color: #214AA3;
             @media all and (max-width: 1023px) {
-                display: block;
+                display: flex;
                 background: #fff;
                 color: #282828;
+                border-radius: 16px;
+                font-size: 14px;
+                height: 76px;
                 border-color: transparent;
+                border: 1px solid var(--light-gray-2);
+                box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.1), 8px 0 8px 0 rgba(0, 0, 0, 0.09), 17px 0 10px 0 rgba(0, 0, 0, 0.05), 31px 0 12px 0 rgba(0, 0, 0, 0.01), 49px 0 14px 0 rgba(0, 0, 0, 0);
                 span {
                     &:before {
                         content: '';
