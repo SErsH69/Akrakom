@@ -1870,15 +1870,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @font-face {
   font-family: "CeraPro";
   font-display: swap;
-  src: url("../fonts/CeraPro-Light.woff2") format("woff2"), url("../fonts/CeraPro-Light.woff") format("woff"), url("../fonts/CeraPro-Light.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/CeraPro-Medium.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff") format("woff"), url("../fonts/CeraPro-Medium.ttf") format("ttf");
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "CeraPro";
   font-display: swap;
-  src: url("../fonts/CeraPro-Medium.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff") format("woff"), url("../fonts/CeraPro-Medium.ttf") format("ttf");
-  font-weight: 500;
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff"), url("../fonts/CeraPro-Regular.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
@@ -1891,8 +1891,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @font-face {
   font-family: "CeraPro";
   font-display: swap;
-  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff"), url("../fonts/CeraPro-Regular.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/CeraPro-Light.woff2") format("woff2"), url("../fonts/CeraPro-Light.woff") format("woff"), url("../fonts/CeraPro-Light.ttf") format("ttf");
+  font-weight: 300;
 }
 
 @font-face {
@@ -1900,55 +1900,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   font-display: swap;
   src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
   font-weight: 800;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("ttf");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("ttf");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("ttf");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "CeraPro";
-  font-display: swap;
-  src: url("../fonts/CeraPro-Black.woff2") format("woff2"), url("../fonts/CeraPro-Black.woff") format("woff"), url("../fonts/CeraPro-Black.ttf") format("ttf");
-  font-weight: 900;
 }
 
 @font-face {
@@ -1966,9 +1917,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @font-face {
-  font-family: "lg";
+  font-family: "CeraPro";
   font-display: swap;
-  src: url("../fonts/lg.woff2") format("woff2"), url("../fonts/lg.woff") format("woff"), url("../fonts/lg.ttf") format("ttf");
+  src: url("../fonts/CeraPro-Black.woff2") format("woff2"), url("../fonts/CeraPro-Black.woff") format("woff"), url("../fonts/CeraPro-Black.ttf") format("ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -1977,6 +1949,34 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   font-display: swap;
   src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
   font-weight: 800;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "lg";
+  font-display: swap;
+  src: url("../fonts/lg.woff2") format("woff2"), url("../fonts/lg.woff") format("woff"), url("../fonts/lg.ttf") format("ttf");
+  font-weight: 400;
 }
 
 :root {
@@ -6627,11 +6627,17 @@ textarea {
 
   .main_tabs__tabs {
     flex-wrap: wrap;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    right: 0px;
   }
 
   .main_tabs__tabs.isShow {
     border-radius: 8px;
     overflow: hidden;
+    background: #fff;
+    box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.08), 0 29px 29px 0 rgba(0, 0, 0, 0.07), 0 65px 39px 0 rgba(0, 0, 0, 0.04), 0 115px 46px 0 rgba(0, 0, 0, 0.01), 0 180px 50px 0 rgba(0, 0, 0, 0);
   }
 
   .main_tabs__tabs.isShow .main_tabs__tab {
@@ -6697,6 +6703,10 @@ textarea {
     margin-top: -12px;
     height: 24px;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9L12 15L18 9' stroke='%23282828' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50%/100% no-repeat;
+  }
+
+  .main_tabs__contents {
+    padding-top: 76px;
   }
 
   .main_tabs__content h2 {

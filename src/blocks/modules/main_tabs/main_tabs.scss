@@ -9,9 +9,15 @@
         display: flex;
         @media all and (max-width: 1023px) {
             flex-wrap: wrap;
+            position: absolute;
+            z-index: 1;
+            left: 0px;
+            right: 0px;
             &.isShow {
                 border-radius: 8px;
                 overflow: hidden;
+                background: #fff;
+                box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.08), 0 29px 29px 0 rgba(0, 0, 0, 0.07), 0 65px 39px 0 rgba(0, 0, 0, 0.04), 0 115px 46px 0 rgba(0, 0, 0, 0.01), 0 180px 50px 0 rgba(0, 0, 0, 0);
                 .main_tabs__tab {
                     display: block;
                     order: 2;
@@ -100,6 +106,11 @@
                     }
                 }
             }
+        }
+    }
+    &__contents {
+        @media all and (max-width: 1023px) {
+            padding-top: 76px;
         }
     }
     &__content {
