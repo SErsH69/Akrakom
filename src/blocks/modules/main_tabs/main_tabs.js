@@ -6,6 +6,8 @@ const MainTabs = class MainTabs {
             var contents = document.querySelectorAll('.main_tabs__content');
             var tabsContainer = document.querySelector('.main_tabs__tabs');
     
+            let isShow = false; // Переменная для хранения состояния isShow
+    
             tabs.forEach(function(tab, index) {
                 tab.addEventListener('click', function() {
                     // Проверяем, имеет ли кликнутая вкладка класс isActive
@@ -23,8 +25,16 @@ const MainTabs = class MainTabs {
                     tab.classList.add('isActive');
                     contents[index].classList.add('isActive');
     
-                    // Проверяем, имеет ли кликнутая вкладка класс isActive
-                    if (isActive) {
+                    if (!isActive) {
+                        // Если текущая вкладка не активна, то убираем класс isShow
+                        isShow = false;
+                    } else {
+                        // Если текущая вкладка уже активна, то инвертируем состояние isShow
+                        isShow = !isShow;
+                    }
+    
+                    // Обновляем класс isShow в соответствии с состоянием
+                    if (isShow) {
                         tabsContainer.classList.add('isShow');
                     } else {
                         tabsContainer.classList.remove('isShow');
