@@ -1,14 +1,14 @@
 .main_prod {
     padding-bottom: vw(28);
     @media all and (max-width: 1023px) {
-        padding-bottom: 24px;
+        padding-bottom: 0px;
     }
     &__text {
         display: flex;
         justify-content: space-between;
         @media all and (max-width: 1023px) {
             flex-direction: column;
-            border-radius: 8px;
+            // border-radius: 8px;
             border-top: 1px solid var(--Light-gray-2, #E0E0E0);
             border-bottom: 1px solid var(--Light-gray-2, #E0E0E0);
             padding: 16px 8px;
